@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Pangolin");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Pangolin";
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.search-input {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.search-input::placeholder {
+    color: rgb(201, 201, 201);
+}
+
+.sales {
+    font-size: 2rem;
+    border-bottom: 3px solid green;
+    cursor: pointer;
+}
+
+.nav-bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu-item {
+    margin-right: 50px;
+    cursor: pointer;
+    color: rgb(214, 214, 214);
+    font-weight: 400;
+}
+
+.slider{
+    background: url(https://images.unsplash.com/photo-1526655805340-274e69922288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); */
+}
+
+.slider-wrapper {
+    display: flex;
+    width: 500vw;
+}
+
+.slider-item{
+    width: 500vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-bg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.slider-img {
+    z-index: 1;
+}
+
+.slider-title {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.slider-price {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.buy-button {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    background-color: black;
+    border: 1px gray solid;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.buy-button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* .slider-item:nth-child(1) .slider-bg{
+    background-color: aqua;
+}
+.slider-item:nth-child(2) .slider-bg{
+    background-color: aqua;
+}
+.slider-item:nth-child(3) .slider-bg{
+    background-color: aqua;
+} */
