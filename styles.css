@@ -59,12 +59,14 @@ nav{
 
 .slider{
     background: url(https://images.unsplash.com/photo-1526655805340-274e69922288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    overflow: hidden;
 }
 
 .slider-wrapper {
     display: flex;
     width: 500vw;
+    transition: transform 1s ease;
 }
 
 .slider-item{
@@ -89,7 +91,7 @@ nav{
 .slider-title {
     position: absolute;
     top: 10%;
-    right: 10%;
+    right: 20%;
     font-size: 60px;
     font-weight: 300;
     text-align: center;
@@ -111,7 +113,7 @@ nav{
 .buy-button {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 20%;
     font-size: 30px;
     font-weight: 300;
     color: white;
@@ -125,13 +127,3 @@ nav{
     background-color: white;
     color: black;
 }
-
-/* .slider-item:nth-child(1) .slider-bg{
-    background-color: aqua;
-}
-.slider-item:nth-child(2) .slider-bg{
-    background-color: aqua;
-}
-.slider-item:nth-child(3) .slider-bg{
-    background-color: aqua;
-} */
