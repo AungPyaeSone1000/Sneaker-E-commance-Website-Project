@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: "Pangolin";
 }
-
+/* NAV BAR */
 nav{
     background-color: black;
     color: white;
@@ -57,6 +57,7 @@ nav{
     font-weight: 400;
 }
 
+/* Slider */
 .slider{
     background: url(https://images.unsplash.com/photo-1526655805340-274e69922288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
@@ -126,4 +127,73 @@ nav{
 .buy-button:hover{
     background-color: white;
     color: black;
+}
+/* FEATURES */
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature-img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-title {
+    font-size: 23px;
+    font-weight: 900;
+    margin: 15px;
+}
+
+.feature-description {
+    color: gray;
+    width: 80%;
+}
+/* Product */
+.product {
+    height: 100vh;
+    background-color:whitesmoke;
+    position: relative;
+    clip-path: polygon(0 0, 100% 28%, 100% 89%, 0% 100%);
+}
+
+.product-img {
+    width: 50%;
+}
+
+.product-details{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 40%;
+}
+
+.product-title{
+    font-size: 75px;
+}
+
+.product-description{
+    color: gray;
+}
+
+.colours, .sizes {
+    display: flex;
+}
+
+.colour{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: black;
 }
