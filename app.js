@@ -6,6 +6,11 @@ const currentProductTitle = document.getElementsByClassName("product-title")[0];
 const currentProductPrice = document.getElementsByClassName("product-price")[0];
 const currentProductColours = document.querySelectorAll(".colour");
 const currentProductSize = document.querySelectorAll(".size");
+const productButton = document.getElementsByClassName("product-button")[0];
+const payment = document.getElementsByClassName("payment")[0];
+const close = document.getElementsByClassName("close")[0];
+
+
 
 const products = [
   {
@@ -141,4 +146,14 @@ currentProductSize.forEach((size,index)=>{
     size.style.color = "white";
     
   })
+})
+
+//Open or close the pop up Payment page
+productButton.addEventListener("click",()=>{
+  payment.style.display="flex";
+  document.body.classList.add('lock-scroll');
+})
+close.addEventListener("click",()=>{
+  payment.style.display="none";
+  document.body.classList.remove('lock-scroll');
 })
