@@ -325,3 +325,25 @@ label{
 .lock-scroll {
     overflow: hidden;
 }
+
+/* Gallery */
+.gallery{
+    background-color: aliceblue;
+    padding: 50px;
+    display: flex;
+}
+
+.gallery-item{
+    flex: 1;
+    padding: 50px;
+}
+
+.gallery-img{
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.gallery-img:hover{
+    transform: scale(1.025);
+}

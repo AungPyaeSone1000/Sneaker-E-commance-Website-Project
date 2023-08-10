@@ -9,6 +9,7 @@ const currentProductSize = document.querySelectorAll(".size");
 const productButton = document.getElementsByClassName("product-button")[0];
 const payment = document.getElementsByClassName("payment")[0];
 const close = document.getElementsByClassName("close")[0];
+const checkOut = document.getElementsByClassName("pay-button")[0];
 
 
 
@@ -154,6 +155,10 @@ productButton.addEventListener("click",()=>{
   document.body.classList.add('lock-scroll');
 })
 close.addEventListener("click",()=>{
+  payment.style.display="none";
+  document.body.classList.remove('lock-scroll');
+})
+checkOut.addEventListener("click",()=>{
   payment.style.display="none";
   document.body.classList.remove('lock-scroll');
 })
