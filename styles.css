@@ -388,3 +388,69 @@ label{
     background-color: black;
     color: white;
 }
+
+/* Footer */
+footer{
+    display: flex;
+}
+
+.footer-left{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.menu-title{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.menu-list{
+    list-style: none;
+}
+
+.list-item{
+    margin-bottom: 5px;
+    color: gray;
+    cursor: pointer;
+}
+
+.footer-right{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.email-input{
+    padding: 5px;
+}
+
+.email-button{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.email-button:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.icons{
+    display: flex;   
+}
+
+.footer-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright{
+    color: gray;
+}
